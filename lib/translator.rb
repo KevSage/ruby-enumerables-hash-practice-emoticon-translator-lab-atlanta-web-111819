@@ -11,11 +11,11 @@ def load_library(library)
   new_hash["get_emoticon"] = Hash.new
   new_hash["get_meaning"] = Hash.new
 
-  emoticons.each do |english_word, emoticon_set|
-    new_hash["get_emoticon"][emoticon_set[0]] = emoticon_set[1]
+  emoticons.each do |english, emoticons|
+    new_hash["get_emoticon"][emoticons[0]] = emoticons[1]
     binding.pry
 
-    new_hash["get_meaning"][emoticon_set[1]] = english_word
+    new_hash["get_meaning"][emoticons[1]] = english
 
   end
 
