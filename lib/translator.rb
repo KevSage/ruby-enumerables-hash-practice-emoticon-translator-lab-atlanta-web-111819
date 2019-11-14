@@ -19,7 +19,7 @@ def load_library(library)
 emoji_hash
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(library, emoticon)
   # code goes here
 end
 
