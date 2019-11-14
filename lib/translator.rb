@@ -8,15 +8,16 @@ def load_library(library)
   # and "get_meaning"
   new_hash = Hash.new
   #Set the keys of new_Hash
-  new_hash["get_emoticon"] = Hash.new
-  new_hash["get_meaning"] = Hash.new
+  emoji_hash["get_emoticon"] = Hash.new
+  emoji_hash["get_meaning"] = Hash.new
 
   emoticons.each do |english, emoticons|
-    new_hash["get_emoticon"][emoticons[0]] = emoticons[1]
-    new_hash["get_meaning"][emoticons[1]] = english
-    binding.pry
+    emoji_hash["get_emoticon"][emoticons[0]] = emoticons[1]
+    emoji_hash["get_meaning"][emoticons[1]] = english
 
   end
+  binding.pry
+
 
     #emoticon_hash["get_emoticon"][emoticon_set.first] = emoticon_set.last
     #emoticon_hash["get_meaning"][emoticon_set.last] = english_word
