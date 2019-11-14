@@ -13,6 +13,8 @@ def load_library(library)
 
   emoticons.each do |english_word, emoticon_set|
     new_hash["get_emoticon"][emoticon_set[0]] = emoticon_set[1]
+    new_hash["get_meaning"][emoticon_set[1]] = english_word
+
   end
   binding.pry
 
