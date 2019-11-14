@@ -14,15 +14,14 @@ def load_library(library)
   emoticons.each do |english, emoticons|
     emoji_hash["get_emoticon"][emoticons[0]] = emoticons[1]
     emoji_hash["get_meaning"][emoticons[1]] = english
-
   end
 emoji_hash
 end
 
 def get_japanese_emoticon(library, emoticon)
   #Call the load_library method
-  emoticons = load_library(library)
-  input = emoticons["get_emoticon"][emoticon]
+  emoji_hash = load_library(library)
+  input = emoji_hash["get_emoticon"][emoticon]
   if input == nil
     input = "Sorry, that emoticon was not found"
   end
