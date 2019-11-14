@@ -12,6 +12,7 @@ def load_library(library)
   new_hash["get_meaning"] = Hash.new
 
   emoticons.each do |english_word, emoticon_set|
+  end
   binding.pry
 
     #emoticon_hash["get_emoticon"][emoticon_set.first] = emoticon_set.last
