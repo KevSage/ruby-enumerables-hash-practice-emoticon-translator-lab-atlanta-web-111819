@@ -20,8 +20,13 @@ emoji_hash
 end
 
 def get_japanese_emoticon(library, emoticon)
+  #Call the load_library method
   emoticons = load_library(library)
   input = emoticons["get_emoticon"][emoticon]
+  if input == nil
+    input = "Sorry, that emoticon was not found"
+  end
+  return input
 end
 
 def get_english_meaning
