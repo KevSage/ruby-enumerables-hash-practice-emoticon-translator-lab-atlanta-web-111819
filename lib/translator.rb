@@ -16,13 +16,7 @@ def load_library(library)
     emoji_hash["get_meaning"][emoticons[1]] = english
 
   end
-  binding.pry
-
-
-    #emoticon_hash["get_emoticon"][emoticon_set.first] = emoticon_set.last
-    #emoticon_hash["get_meaning"][emoticon_set.last] = english_word
-  #end
-  #emoticon_hash
+emoji_hash
 end
 
 def get_japanese_emoticon
