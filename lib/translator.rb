@@ -28,7 +28,7 @@ def get_japanese_emoticon(library, emoticon)
   return input
 end
 
-def get_english_meaning
+def get_english_meaning(library, emoticon)
   #Call the load_library method
   emoji_hash = load_library(library)
   input = emoji_hash["get_meaning"][emoticon]
