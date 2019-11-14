@@ -6,7 +6,7 @@ def load_library(library)
   emoticons = YAML.load_file(library)
   # We must create a new hash from scratch with the two keys "get_emoticon"
   # and "get_meaning"
-  new_hash = Hash.new
+  emoji_hash = Hash.new
   #Set the keys of new_Hash
   emoji_hash["get_emoticon"] = Hash.new
   emoji_hash["get_meaning"] = Hash.new
