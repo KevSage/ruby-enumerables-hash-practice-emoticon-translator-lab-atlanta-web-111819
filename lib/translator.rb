@@ -20,7 +20,7 @@ emoji_hash
 end
 
 def get_japanese_emoticon(library, emoticon)
-  emoticons = YAML.load_file(library)
+  emoticons = load_library(library)
 end
 
 def get_english_meaning
